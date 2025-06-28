@@ -1,4 +1,4 @@
-A simple stack-based python Interpreter.
+A simple, stack-based python Interpreter.
 When running, copy the file path of the code you want to run into the python terminal
 
 Commands:
