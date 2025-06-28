@@ -3,7 +3,7 @@ When running, copy the file path of the code you want to run into the python ter
 
 Commands:
 - PUSH -number-: pushes the -number- into the Stack
-- POP: removes the top value of the stack and prints it to the terminal
+- POP: removes the top value of the stack and prints into the terminal
 - ADD: adds the 2 uppest values of the stack, removes them and pushes the outcome to the stack
 - SUB: subs the 2 uppest values of the stack, removes them and pushes the outcome to the stack
 - PRINT -string-: prints the -string- to the python terminal
