@@ -10,7 +10,7 @@ Commands:
 - READ: read integer input in the python terminal and pushes it to the stack
 - JUMP.EQ.0 -name-: if the top value of the stack is equal to 0, runs the function with the corresponding -name-, else runs the code below
 - JUMP.GT.0 -name-: if the top value of the stack is greater than 0, runs the function with the corresponding -name-, else runs the code below
-- Halt: ends the program
+- HALT: ends the program
 
 Functions:
 - to make a functions, simply write just the name for the function, below the code lines, and at the end of the functions a / sign
