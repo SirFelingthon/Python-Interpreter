@@ -1,5 +1,6 @@
 A simple python Interpreter
 When running, copy the file path of the code you want to run into the python terminal
+
 Commands:
 - PUSH -number-: pushes the -number- into the Stack
 - POP: removes the top value of the stack and prints it to the terminal
@@ -9,3 +10,7 @@ Commands:
 - READ: read integer input in the python terminal and pushes it to the stack
 - JUMP.EQ.0 -name-: if the top value of the stack is equal to 0, runs the function with the corresponding -name-, else runs the code below
 - JUMP.GT.0 -name-: if the top value of the stack is greater than 0, runs the function with the corresponding -name-, else runs the code below
+- Halt: ends the program
+
+Functions:
+- to make a functions, simply write just the name for the function, below the code lines, and at the end of the functions a / sign
