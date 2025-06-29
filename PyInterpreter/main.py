@@ -88,7 +88,8 @@ if os.path.exists(filePath) and os.path.isfile(filePath):
                 lines = []
                 line = start + 1
                 while not commands[line] == functionEnd:
-                    lines.append(commands[line])
+                    if not commands[line] == "":
+                        lines.append(commands[line])
                     line += 1
                 
                 function = Function(commandParts[1], lines)
