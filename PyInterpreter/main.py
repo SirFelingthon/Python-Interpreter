@@ -51,7 +51,7 @@ def Execute(toExecute: list):
             value = commandParts[1]
             print(value)
         elif commandParts[0] == "READ":
-            value = input(" - ")
+            value = input(str(commandParts[1]))
             stack.Push(value)
         elif commandParts[0] == "JUMP.EQ.0":
             value = stack.Top()
@@ -70,7 +70,7 @@ def Execute(toExecute: list):
 
 
 stack = Stack()
-commandTypes = ["PUSH", "POP", "ADD", "SUB", "PRINT", "READ", "JUMP.EQ.0", "JUMP.GT.0", "HALT"]
+functionStart = "FUNC"
 functionEnd = "/"
 
 filePath = input("File Path: ")
@@ -83,19 +83,18 @@ if os.path.exists(filePath) and os.path.isfile(filePath):
         functions = []
         for i in commands:
             commandParts = i.split(" ")
-            if not commandParts[0] in commandTypes:
-                if not commandParts[0] == functionEnd and not commandParts[0] == "":
-                    start = commands.index(i)
-                    lines = []
-                    line = start + 1
-                    while not commands[line] == functionEnd:
-                        lines.append(commands[line])
-                        line += 1
-                    
-                    function = Function(i, lines)
-                    functions.append(function)
+            if commandParts[0] == functionStart:
+                start = commands.index(i)
+                lines = []
+                line = start + 1
+                while not commands[line] == functionEnd:
+                    lines.append(commands[line])
+                    line += 1
+                
+                function = Function(commandParts[1], lines)
+                functions.append(function)
 
-                    for e in range(line - start + 1):
-                        commands.remove(commands[start])
+                for e in range(line - start + 1):
+                    commands.remove(commands[start])
 
         Execute(commands)
