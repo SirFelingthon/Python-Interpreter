@@ -13,4 +13,4 @@ Commands:
 - HALT: ends the program
 
 Functions:
-- to make a function, simply write just the name for the function, below the code lines, and at the end of the function a / sign
+- to make a function, simply write FUNC and the name for the function, below the code lines, and at the end of the function a / sign
