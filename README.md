@@ -14,4 +14,4 @@ A simple, stack-based interpreter made with python. When running, copy the file 
 - **HALT**: ends the program
 
 <ins>**Functions**</ins>:
-- to make a function, simply write FUNC and the name for the function, below the code lines, and at the end of the function a / sign
+- to make a function, simply write FUNC and the name for the function, below the code lines, and at the end of the function a "/"
