@@ -15,3 +15,7 @@ A simple, stack-based interpreter made with python. When running, copy the file 
 
 <ins>**Functions**</ins>:
 - to make a function, simply write FUNC and the name for the function, below the code lines, and at the end of the function a "/"
+- Example: FUNC func1
+           PUSH 10
+           /
+  
